@@ -153,7 +153,7 @@ Output:
 | How many shares are listed?          | 4                    |
 | Which share is accessible?           | WorkShares           |
 | Command to download a file?          | get                  |
-| Final flag?                          | <FLAG REDACTED>      |
+| Final flag?                          | `<FLAG REDACTED>`     |
 
 ---
 
