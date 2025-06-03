@@ -11,7 +11,7 @@ Okay, let’s start…
 
 I started by scanning the target IP using `nmap`.
 
-```bash
+```
 nmap -A 10.129.1.17
 ```
 
@@ -36,13 +36,13 @@ command not found
 
 So I installed Telnet:
 
-```bash
+```
 apt install telnet
 ```
 
 Then I connected:
 
-```bash
+```
 telnet 10.129.1.17
 ```
 
@@ -64,7 +64,7 @@ I tried some default usernames and passwords:
 
 Once I logged in as root, I looked around and found the flag.
 
-```bash
+```
 cat flag.txt
 ```
 
